@@ -7,7 +7,7 @@ function importData(id, callback) {
 	var number = null;
 	var ratio = null;
 
-	var url = "https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/structureData.json";
+	var url = "/data/structureData.json";
 	$.ajax(url, {
 		crossDomain: true,
 		success: processStructures,
@@ -15,9 +15,9 @@ function importData(id, callback) {
 	});
 	
 	//Input data
-	apiQuery("https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/PFC_VIP_input.json",processExpression);
-	apiQuery("https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/PFC_VIP_input.json",processNumber);
-	apiQuery("https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/PFC_VIP_input.json",processRatio);
+	apiQuery("/data/PFC_VIP_input.json",processExpression);
+	apiQuery("/data/PFC_VIP_input.json",processNumber);
+	apiQuery("/data/PFC_VIP_input.json",processRatio);
 	
 	
 	// These two methods simply exist to set the `structures`, `expression`, and 'number'
