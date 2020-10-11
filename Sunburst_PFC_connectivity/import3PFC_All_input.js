@@ -7,11 +7,8 @@ function importData(id, callback) {
 	var number = null;
 	var ratio = null;
 
-<<<<<<< HEAD
 	var url = "https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/structureData.json";
-=======
-	var url = "https://github.com/PierreLeMerre/Plotly/blob/main/Sunburst_PFC_connectivity/data/structureData.json";
->>>>>>> 0b14808b833ba734c5820d21d9f32dae440faac0
+
 	$.ajax(url, {
 		crossDomain: true,
 		success: processStructures,
@@ -19,17 +16,12 @@ function importData(id, callback) {
 	});
 	
 	//Input data
-<<<<<<< HEAD
+
 	apiQuery("https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/PFC_All_input.json",processExpression);
 	apiQuery("https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/PFC_All_input.json",processNumber);
 	apiQuery("https://github.com/PierreLeMerre/Plotly/Sunburst_PFC_connectivity/data/PFC_All_input.json",processRatio);
-=======
-	apiQuery("https://github.com/PierreLeMerre/Plotly/blob/main/Sunburst_PFC_connectivity/data/PFC_All_input.json",processExpression);
-	apiQuery("https://github.com/PierreLeMerre/Plotly/blob/main/Sunburst_PFC_connectivity/data/PFC_All_input.json",processNumber);
-	apiQuery("https://github.com/PierreLeMerre/Plotly/blob/main/Sunburst_PFC_connectivity/data/PFC_All_input.json",processRatio);
->>>>>>> 0b14808b833ba734c5820d21d9f32dae440faac0
-	
-	
+
+		
 	// These two methods simply exist to set the `structures`, `expression`, and 'number'
 	// variables in `importData`'s scope.  They both call `processData` 
 	// afterwards, which will only run one both variables have been set.
