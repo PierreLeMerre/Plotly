@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	  <title>All input to PFC</title>
+		<link rel="stylesheet" href="jquery-ui-1.10.0.custom.css">
+		<link rel="stylesheet" href="examples.css">
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.10.0.custom.min.js"></script>
+	  	<script type="text/javascript" src="d3.v3.js"></script>
+		<script type="text/javascript" src="jquery.ie.cors.js"></script>
+		<script type="text/javascript" src="modernizr.svg.js"></script>		
+  </head>
+  <body>	
+		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RV-eGFP labeled presynaptic input to mPFC</h2>	
+		<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All = 17 animals</h3>
+
+		<img src="images/empty.png">
+		<a href="PFC_All_input.html" style="text-decoration:underline; font-size:130%"><font color="red">All cell types</font></a>
+		<img src="images/empty.png"><br>
+
+		<img src="images/empty.png">	
+		<a href="PFC_PV_input.html" style="text-decoration:none; font-size:130%"><font color="royalblue">PV INs</font></a>
+
+		<img src="images/empty.png">
+		<a href="PFC_CA_input.html" style="text-decoration:none; font-size:130%"><font color="darkturquoise">CA neurons</font></a>
+
+		<img src="images/empty.png">
+		<a href="PFC_SST_input.html" style="text-decoration:none; font-size:130%"><font color="darkorchid">SST INs</font></a>
+
+		<img src="images/empty.png">
+		<a href="PFC_VIP_input.html" style="text-decoration:none; font-size:130%"><font color="orange">VIP INs</font></a>
+	
+		<div id="errorDialog" title="API Query Error"></div>	
+	
+		<div id="content">
+		  <div id="chart"></div>		
+			<div id="description">
+			<br>
+		  	<br>
+				<table id="visProperties">
+				<tr>
+				<td>Region:</td>
+				<td><div id="structureLabel"></div></td>
+				</tr>	
+				<tr><td class="hrule" colspan=2></td></tr>
+				<tr>
+				<td>Percentage:</td> 
+				<td><div id="expressionLabel"></div></td>
+				</tr>			
+				<tr><td class="hrule" colspan=2></td></tr>
+				<tr>	
+				<td>Number (avg):</td> 
+				<td><div id="numberLabel"></div></td>
+				</tr>
+				<tr><td class="hrule" colspan=2></td></tr>
+				<tr>	
+				<td>Ratio (input/starter):</td> 
+				<td><div id="ratioLabel"></div></td>
+				</tr>
+				<tr><td class="hrule" colspan=2></td></tr>
+				</table>
+			</div>	
+  	    	</div>
+</body>
+  <script type="text/javascript" src="import3PFC_All_input.js"></script>
+  <script type="text/javascript" src="sunburst.js"></script>
+</html>

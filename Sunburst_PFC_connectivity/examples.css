@@ -1,0 +1,89 @@
+html {
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+#content {
+	position: absolute;
+	width: 1024px;
+	left: 0px;
+	padding: 5px;
+}
+
+#chart {
+	position: relative;
+	width: 500px;
+	left: 50px;
+	height: 500px;
+}
+
+#description {
+	position: absolute;
+	top: 0px;
+	left: 550px;
+	width: 500px; 
+}
+
+#documentation {
+	position: relative;
+	top: 550px;
+	width: 550px;
+}
+
+#documentation table {
+	border-spacing: 5px;
+}
+
+#pFooter {
+	clear: both;
+}
+
+#visProperties {
+	border-spacing: 0px 10px;
+}
+
+#visProperties .hrule {
+	background: #eee;
+	padding: 1px;
+}
+
+.ui-widget {
+	font-size: 10px;
+}
+
+.label {
+
+}
+
+#svgTable td {
+	text-align: center
+}
+
+.svgError {
+	color: red;
+	top: 50%;
+	position: absolute;
+}
+
+body > h1:first-child {
+
+	text-align: center;
+	margin: 60px;
+}
+
+#pFooter {
+
+	margin-top: 30px;
+	position: absolute;
+	width: 100%;
+}
+
+#footer_content {
+
+	display:none;
+}
+
+#content {
+
+	margin:auto;
+}
+
