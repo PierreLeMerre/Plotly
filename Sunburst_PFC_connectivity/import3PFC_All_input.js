@@ -7,8 +7,7 @@ function importData(id, callback) {
 	var number = null;
 	var ratio = null;
 
-	var url = "/data/structureData.json";
-
+	var url = "https://www.pierrelemerre.com/Plotly/Sunburst_PFC_connectivity/data/structureData.json";
 	$.ajax(url, {
 		crossDomain: true,
 		success: processStructures,
@@ -16,12 +15,11 @@ function importData(id, callback) {
 	});
 	
 	//Input data
-
-	apiQuery("/data/PFC_All_input.json",processExpression);
-	apiQuery("/data/PFC_All_input.json",processNumber);
-	apiQuery("/data/PFC_All_input.json",processRatio);
-
-		
+	apiQuery("https://www.pierrelemerre.com/Plotly/Sunburst_PFC_connectivity/data/PFC_All_input.json",processExpression);
+	apiQuery("https://www.pierrelemerre.com/Plotly/Sunburst_PFC_connectivity/data/PFC_All_input.json",processNumber);
+	apiQuery("https://www.pierrelemerre.com/Plotly/Sunburst_PFC_connectivity/data/PFC_All_input.json",processRatio);
+	
+	
 	// These two methods simply exist to set the `structures`, `expression`, and 'number'
 	// variables in `importData`'s scope.  They both call `processData` 
 	// afterwards, which will only run one both variables have been set.
